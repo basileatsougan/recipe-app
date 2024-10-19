@@ -1,13 +1,15 @@
 
 getRandomMeal();
 
-async function getRandomMeal(){
-    const resp = await fetch('www.themealdb.com/api/json/v1/1/random.php');
+async function getRandomMeal() {
 
-    const respData = await resp.json();
+    const resp = await fetch(`www.themealdb.com/api/json/v1/1/random.php`;
+
+    const respDate = resp.json()
     const randomMeal = respData.meals[0];
 
-    //console.log(randomMeal);
+     //console.log(randomMeal);
+
 }
 
 async function getMealById(id){
